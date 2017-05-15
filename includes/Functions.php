@@ -76,6 +76,8 @@ function displayTable() {
 
 /**
  * Count visitors who haven't signed out
+ *
+ * @return  number of visitors still in the building
 */
 function countVisitors() {
     $conn = getDatabaseConnection();
@@ -98,7 +100,10 @@ function countVisitors() {
 
 
 
-/* Return the average visit length
+/*
+ * Return the average visit length
+ *
+ * @return  a floating point, of the average minutes per visit
 */
 function averageVisit()
 {
@@ -119,7 +124,7 @@ function averageVisit()
     $conn->close();
 
    return $retval;
-}
+}//averageVisit
 
 
 ?>
