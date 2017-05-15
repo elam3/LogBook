@@ -1,0 +1,4 @@
+<?php
+$dbuser = 'your username here';
+$dbpass = 'your password here';
+?>
