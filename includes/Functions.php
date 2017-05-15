@@ -22,8 +22,8 @@ function getDatabaseConnection() {
 function signIn() {
     $conn = getDatabaseConnection();
     if(isset($_POST['visitor'])) {
-        $visitor = $_POST['visitor'];
-        $visiting = $_POST['visiting'];
+        $visitor = $conn->real_escape_string($_POST['visitor']);
+        $visiting = $conn->real_escape_string($_POST['visiting']);
         $timein = date("Y-m-d H:i:s");
         //Insert into database
         $insert = "INSERT INTO grp5c (Name, Visiting) VALUES ('".$visitor."', '".$visiting."')";
