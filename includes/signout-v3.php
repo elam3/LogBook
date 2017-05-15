@@ -13,7 +13,7 @@
 	$result = $conn->query($insertOut);
 
     // Exit Procedures
-    $result->free();
+    //$result->free();
     $conn->close();
 
 	//Send out time back over AJAX
