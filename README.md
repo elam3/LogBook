@@ -13,8 +13,11 @@ LogBook is an assignment that applies the MVC framework to implement a logbook t
 
 ## Setting File permissions
 `find . -type d -exec chmod 0700 {} \;`
+
 `find . -type f -exec chmod 0600 {} \;`
+
 `chmod 0711 assets assets/img`
+
 `chmod 0644 index.html assets/{style.css,iconmonstr-time-10-240.png,iconmonstr-user-29-240.png}`
 
 # Contributors
